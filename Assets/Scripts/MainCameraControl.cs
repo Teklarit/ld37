@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CameraControl : MonoBehaviour
+public class MainCameraControl : MonoBehaviour
 {
     public float mouseSensitivity = 5.0f;        // Mouse rotation sensitivity.
     public float speed = 10.0f;    // Regular speed.
