@@ -10,6 +10,8 @@ public class CameraControl : MonoBehaviour
     public float maxShift = 100.0f;    // Maximum speed when holding shift.
     public bool walkerMode = false;    // Walker Mode.
 
+    public LayerMask interactibleLayerMask;
+
     private float totalRun = 1.0f;
     private float rotationY = 0.0f;
     private float maximumY = 90.0f;    // Not recommended to change
@@ -80,6 +82,13 @@ public class CameraControl : MonoBehaviour
             {
                 transform.Translate(p);
             }
+        }
+
+        // raycast
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 8.0f, interactibleLayerMask))
+        {
+            print("Found an object - distance: " + hit.distance);
         }
     }
 
