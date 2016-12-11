@@ -4,6 +4,7 @@ using System.Collections;
 public class MainCameraControl : MonoBehaviour
 {
     public UiMessage ui_message;
+    public IngameMenuFns ingame_menu;
 
     public float mouseSensitivity = 5.0f;        // Mouse rotation sensitivity.
     public float speed = 10.0f;    // Regular speed.
@@ -42,6 +43,17 @@ public class MainCameraControl : MonoBehaviour
 
     void LateUpdate()
     {
+        if (ingame_menu.is_active)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            return;
+        }
+        else
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
         // Mouse commands.
         float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivity;
         rotationY += Input.GetAxis("Mouse Y") * mouseSensitivity;

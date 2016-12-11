@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class IngameMenuFns : MonoBehaviour {
-    private bool is_active;
+    public bool is_active;
     public Canvas canvas;
 
 	// Use this for initialization
