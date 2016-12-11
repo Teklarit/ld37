@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: def4a9f8ecb11cc468976ea36c3a3515
+timeCreated: 1481479049
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: junko's typewriter
+  fontNames:
+  - junko's typewriter
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

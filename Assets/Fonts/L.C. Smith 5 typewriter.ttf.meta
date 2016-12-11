@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0d3934cfb14119f4681823f898f396bc
+timeCreated: 1481479195
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: L.C. Smith 5 typewriter
+  fontNames:
+  - L.C. Smith 5 typewriter
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
