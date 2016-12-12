@@ -41,10 +41,10 @@ public class MainCameraControl : MonoBehaviour
             // Toggle mode.
             walkerMode = !walkerMode;
         }
-        if (Input.GetMouseButton(0))
+        /*if (Input.GetMouseButton(0))
         {
             ui_message.show_message(@"Not a penny. I have been content, sir, you should lay my countenance to pawn; I have grated upon my good friends for three reprieves for you and your coach-fellow Nym; or else you had looked through the grate, like a geminy of baboons. I am damned in hell for swearing to gentlemen my friends, you were good soldiers and tall fellows; and when Mistress Bridget lost the handle of her fan, I took't upon mine honour thou hadst it not.");
-        }
+        }*/
 
     }
 
