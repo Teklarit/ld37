@@ -12,12 +12,15 @@ public class NodeWalker : MonoBehaviour {
 	public Node startNode;
 	public UiMessage UIMessage;
 	public LayerMask interactibleLayer;
+	[ColorUsage(false, true, 0, 8, 0.125f, 3)] public Color hidden;
+	[ColorUsage(false, true, 0, 8, 0.125f, 3)] public Color revealed;
+
 
 	private void Unreveal(Node node) {
 		if (!node.originalObj) return;
 		var blob = node.originalObj.FindChild("blob");
 		blob.gameObject.SetActive(true);
-		blob.GetComponent<NoiseBallRendererFixed>()._surfaceColor = Color.red;
+		blob.GetComponent<NoiseBallRendererFixed>()._surfaceColor = hidden;
 		node.originalObj.GetComponent<BoxCollider>().enabled = false;
 		node.clearObj.gameObject.SetActive(false);
 		node.state = Node.State.HIDDEN;
@@ -34,7 +37,7 @@ public class NodeWalker : MonoBehaviour {
 		if (!node.originalObj) return;
 		var blob = node.originalObj.FindChild("blob");
 		blob.gameObject.SetActive(true);
-		blob.GetComponent<NoiseBallRendererFixed>()._surfaceColor = Color.green;
+		blob.GetComponent<NoiseBallRendererFixed>()._surfaceColor = revealed;
 		node.originalObj.GetComponent<BoxCollider>().enabled = true;
 		node.clearObj.gameObject.SetActive(false);
 		node.state = Node.State.ASSOCIATED;
