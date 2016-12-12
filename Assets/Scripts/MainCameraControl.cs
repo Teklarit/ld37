@@ -37,7 +37,10 @@ public class MainCameraControl : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.Q)) { walkerMode = !walkerMode; }
-        if (Input.GetKeyDown(KeyCode.Escape)) { SceneManager.LoadScene(0); }
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            SceneManager.LoadScene(0);
+            Cursor.lockState = CursorLockMode.Confined;
+        }
     }
 
     void LateUpdate()
