@@ -3,6 +3,7 @@ using System.Collections;
 
 public class MainCameraControl : MonoBehaviour
 {
+    //public GameObject look_camera;
     public UiMessage ui_message;
     public IngameMenuFns ingame_menu;
 
@@ -12,6 +13,10 @@ public class MainCameraControl : MonoBehaviour
     public float shiftAdd = 25.0f;    // Multiplied by how long shift is held.  Basically running.
     public float maxShift = 100.0f;    // Maximum speed when holding shift.
     public bool walkerMode = false;    // Walker Mode.
+
+    public float zoom_speed = 0.05f;
+    public float normal_fov = 60.0f;
+    public float zoomed_fov = 30.0f;
 
     public LayerMask interactibleLayerMask;
 
@@ -39,6 +44,7 @@ public class MainCameraControl : MonoBehaviour
         {
             ui_message.show_message(@"Not a penny. I have been content, sir, you should lay my countenance to pawn; I have grated upon my good friends for three reprieves for you and your coach-fellow Nym; or else you had looked through the grate, like a geminy of baboons. I am damned in hell for swearing to gentlemen my friends, you were good soldiers and tall fellows; and when Mistress Bridget lost the handle of her fan, I took't upon mine honour thou hadst it not.");
         }
+
     }
 
     void LateUpdate()
@@ -54,6 +60,14 @@ public class MainCameraControl : MonoBehaviour
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
+
+        // FOV
+        var cam = gameObject.GetComponent<Camera>();
+        if (Input.GetButton("Fire2"))
+            cam.fov = Mathf.Lerp(cam.fov, zoomed_fov, zoom_speed);
+        else
+            cam.fov = Mathf.Lerp(cam.fov, normal_fov, zoom_speed);
+
         // Mouse commands.
         float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivity;
         rotationY += Input.GetAxis("Mouse Y") * mouseSensitivity;
