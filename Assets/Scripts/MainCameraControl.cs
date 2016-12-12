@@ -6,6 +6,7 @@ public class MainCameraControl : MonoBehaviour
     //public GameObject look_camera;
     public UiMessage ui_message;
     public IngameMenuFns ingame_menu;
+    public aimController aim_controller;
 
     public float mouseSensitivity = 5.0f;        // Mouse rotation sensitivity.
     public float speed = 10.0f;    // Regular speed.
@@ -120,9 +121,14 @@ public class MainCameraControl : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, 8.0f, interactibleLayerMask))
         {
+            aim_controller.is_ineractable = true;
             Collider hit_collider = hit.collider;
             print("Get collider, game_object: " + hit_collider.gameObject);
             print("Found an object - distance: " + hit.distance);
+        }
+        else
+        {
+            aim_controller.is_ineractable = false;
         }
     }
 
