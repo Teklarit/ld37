@@ -73,12 +73,19 @@ public class UiMessage : MonoBehaviour {
     {
         if (is_showed != is_showed_cache)
         {
-            float fade_delay = is_showed ? fade_starting_delay : fade_closing_delay;
-            float fade_value = is_showed ? 0.85f : 0.0f;
+            float fade_delay = fade_closing_delay;
+            float fade_value = 0.0f;
+            float fade_text_value = 0.0f;
+            if (is_showed)
+            {
+                fade_delay = fade_starting_delay;
+                fade_value = 0.85f;
+                fade_text_value = 1.0f;
+            }
 
             is_showed_cache = is_showed;
             background_image.CrossFadeAlpha(fade_value, fade_delay, true);
-            message.CrossFadeAlpha(fade_value, fade_delay, true);
+            message.CrossFadeAlpha(fade_text_value, fade_delay, true);
         }
     }
 
