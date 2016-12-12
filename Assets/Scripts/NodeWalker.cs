@@ -20,12 +20,14 @@ public class NodeWalker : MonoBehaviour {
 		blob.GetComponent<NoiseBallRendererFixed>()._surfaceColor = Color.red;
 		node.originalObj.GetComponent<BoxCollider>().enabled = false;
 		node.clearObj.gameObject.SetActive(false);
+		node.state = Node.State.HIDDEN;
 	}
 
 	private void Reveal(Node node) {
 		node.originalObj.FindChild("blob").gameObject.SetActive(false);
 		node.clearObj.gameObject.SetActive(true);
 		node.originalObj.GetComponent<BoxCollider>().enabled = true;
+		node.state = Node.State.REVEALED;
 	}
 
 	private void Associate(Node node) {
@@ -35,16 +37,40 @@ public class NodeWalker : MonoBehaviour {
 		blob.GetComponent<NoiseBallRendererFixed>()._surfaceColor = Color.green;
 		node.originalObj.GetComponent<BoxCollider>().enabled = true;
 		node.clearObj.gameObject.SetActive(false);
+		node.state = Node.State.ASSOCIATED;
 	}
 
 	private void GoNode(Node node) {
+		Debug.Log("---------------------------------------------");
+		Debug.Log("NEW NODE: " + node);
+		Debug.Log("CURRENT NODE: " + currentNode);
+		Debug.Log("PREV NODE:" + prevNode);
 		if (!node.visited) {
 			node.visited = true;
 			if (node.isSecretAgent) secretAgent += 1;
 		}
+		if (node.name == "poster-painting") {
+			var painterly = GameObject.Find("table-painterly").GetComponent<Node>();
+			var writer = GameObject.Find("table").GetComponent<Node>();
+			Unreveal(writer);
+			Associate(painterly);
+		}
 		// Hide node previous to the one we currently have, not the one we're going to
 		if (prevNode) {
-			Unreveal(prevNode);
+
+			// Can't hide table my stuff is on
+			if (prevNode.name != "table-painterly" && prevNode.name != "table") {
+				Unreveal(prevNode);
+			} else
+				prevNode.originalObj.GetComponent<BoxCollider>().enabled = false;
+
+			// Hid the table first opportunity we get moving away from it
+			//var zebraToProPhoto = prevNode.name == "other-pictures" && currentNode.name == "photo-zebra";
+			//var awayFromPainterly = (prevNode.name == "other-pictures" && (currentNode.name == "big_box-terrarium" || currentNode.name == "photo-zebra"));
+			//var awayFromWriter = (prevNode.name == "scratchpad" && currentNode.name == "camera");
+			//if (zebraToProPhoto) {
+				//Unreveal(GameObject.Find("table-painterly").GetComponent<Node>());
+			//}
 		}
 		// Hide all the associations for the current node that we've not used
 		if (currentNode) {
@@ -55,7 +81,8 @@ public class NodeWalker : MonoBehaviour {
 		// Reveal the association that we used
 		Reveal(node);
 		for (var i = 0; i < node.associations.Length; i++) {
-			Associate(node.associations[i]);
+			if (node.associations[i] != currentNode)
+				Associate(node.associations[i]);
 		}
 		// Store the previous node in a history stack
 		if (prevNode) history.Push(prevNode);
@@ -68,19 +95,29 @@ public class NodeWalker : MonoBehaviour {
 
 	private void Return() {
 		// Pretend we moved to a previous node
+		Debug.Log("RETURNING");
+		for (var i = 0; i < currentNode.associations.Length; i++) {
+			Unreveal(currentNode.associations[i]);
+		}
+		for (var i = 0; i < prevNode.associations.Length; i++) {
+			Debug.Log("UNREVEALING " + prevNode.associations[i]);
+			Unreveal(prevNode.associations[i]);
+		}
 		var newCurrent = prevNode;
 		prevNode = null;
 		if (history.Count > 0) {
-			Debug.Log(history.Peek());
+			Debug.Log("REVEALING: " + history.Peek());
 			currentNode = history.Pop();
 			Reveal(currentNode);
+		} else {
+			currentNode = null;
 		}
 		GoNode(newCurrent);
 	}
 
 	void Start () {
 		history = new Stack<Node>();
-		//GoNode(startNode);
+		GoNode(startNode);
 	}
 	
 	void Update () {
@@ -88,6 +125,10 @@ public class NodeWalker : MonoBehaviour {
 			RaycastHit hit;
 			if (Physics.Raycast(transform.position, transform.forward, out hit, 8.0f, interactibleLayer)) {
 				if (hit.transform == currentNode.originalObj) return; // Don't run anything if we hit the current node
+				if (prevNode && hit.transform == prevNode.originalObj) {
+					Return();
+					return;
+				}
 				// Find the matching association and go to that node
 				for (var i = 0; i < currentNode.associations.Length; i++) {
 					var association = currentNode.associations[i];
@@ -97,7 +138,6 @@ public class NodeWalker : MonoBehaviour {
 						return;
 					}
 				}
-				Return();
 			}
 		}		
 	}

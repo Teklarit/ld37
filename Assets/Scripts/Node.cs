@@ -9,5 +9,11 @@ public class Node : MonoBehaviour {
 	public Transform clearObj;
 	public bool isSecretAgent;
 	public bool visited;
+	public enum State {
+		HIDDEN,
+		ASSOCIATED,
+		REVEALED
+	}
+	public State state;
 	public Node[] associations;
 }
