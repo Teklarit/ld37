@@ -1328,6 +1328,12 @@ Prefab:
       propertyPath: ui_message
       value: 
       objectReference: {fileID: 983476663}
+    - target: {fileID: 114589185407181402, guid: ad8359ce63bf8244f8e3129fed223a72,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c53bc0be412255e49a0d88931cbf2500,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad8359ce63bf8244f8e3129fed223a72, type: 2}
   m_IsPrefabParent: 0
