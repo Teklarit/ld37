@@ -80,7 +80,7 @@ public class NodeWalker : MonoBehaviour {
 
 	void Start () {
 		history = new Stack<Node>();
-		GoNode(startNode);
+		//GoNode(startNode);
 	}
 	
 	void Update () {
