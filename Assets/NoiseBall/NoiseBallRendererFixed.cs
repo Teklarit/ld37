@@ -29,7 +29,7 @@ namespace NoiseBall
         Color _lineColor = Color.white;
 
         [SerializeField, ColorUsage(false)]
-        Color _surfaceColor = Color.white;
+        public Color _surfaceColor = Color.white;
 
         [SerializeField, Range(0, 1)]
         float _metallic = 0.5f;
