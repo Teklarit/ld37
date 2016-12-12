@@ -6,19 +6,40 @@ using UnityEngine.UI;
 public class GameCutscene : MonoBehaviour
 {
 	public Image Fader;
-	public Transform Burglar;
 	public GameObject Player;
 	public Camera sittingCamera;
-	public Transform[] GoTo;
-	public float DramaticBeforeHitDelay;
+	public float StartTalkDelay = 1.0f;
+	public float DramaticBeforeHitDelay =1.0f;
 	public float DramaticAfterHitDelay = 1.0f;
 	public float BeforeStopmotionDelay;
-	private Animator _animator;
+	public Transform[] Animators;
+	public Transform[] CameraStartTransitions;
+	public Transform[] CameraWinTransitions;
+	public Transform[] CameraLoseTransitions;
+	public float[] CameraStartFovs;
 	void Start ()
 	{
-		_animator = Burglar.GetComponent<Animator>();
-		StartCoroutine(DoCutscene());
+		//_animator = Burglar.GetComponent<Animator>();
+		StartCoroutine(DoStartCutscene());
 	}
+
+	//public void TriggerWinSequenc()
+	//{
+	//	StartCoroutine(DoWinCutscene());
+	//}
+	//public void TriggerLoseSequenc()
+	//{
+	//	StartCoroutine(DoLoseCutscene());
+	//}
+
+	//IEnumerator DoWinCutscene()
+	//{
+	//	yield return;
+	//}
+
+	//IEnumerator DoLoseCutscene()
+	//{
+	//}
 
 	IEnumerator ChangeFov()
 	{
@@ -31,37 +52,50 @@ public class GameCutscene : MonoBehaviour
 		}
 	}
 
-	IEnumerator SleepWell()
+	IEnumerator MoveCamera(Transform[] transitions,float[] fovs, float wholeTime)
 	{
-		var time = BeforeStopmotionDelay * 0.8f;
-		yield return new WaitForSeconds(time);
-		while (time < BeforeStopmotionDelay)
+		for (int i = 1; i < transitions.Length; i++)
 		{
-			Fader.color = new Color(0, 0, 0, 2*time / BeforeStopmotionDelay);
-			yield return new WaitForSeconds(Time.deltaTime);
-		}
-	}
-	IEnumerator DoCutscene()
-	{
-		for (int i = 0; i < GoTo.Length; i++)
-		{
-			var distance = Vector3.Distance(Burglar.position, GoTo[i].position);
-			while (distance > 0.5f)
+			print(i);
+			var time = 0.0f;
+			while (time < wholeTime/transitions.Length)
 			{
-				Burglar.rotation = Quaternion.Lerp(Burglar.rotation, Quaternion.LookRotation(GoTo[i].position - Burglar.position),
-					Time.deltaTime*10);
-				_animator.SetFloat("VSpeed", Mathf.Clamp(distance*2, 0, 1));
-				distance = Vector3.Distance(Burglar.position, GoTo[i].position);
+				sittingCamera.transform.position = Vector3.Lerp(sittingCamera.transform.position,transitions[i].position, 2 * Time.deltaTime);
+				sittingCamera.transform.rotation = Quaternion.Lerp(sittingCamera.transform.rotation, transitions[i].rotation, 2 * Time.deltaTime);
+				sittingCamera.fieldOfView = Mathf.Lerp(sittingCamera.fieldOfView, CameraStartFovs[i], 2 * Time.deltaTime);
+				time += Time.deltaTime;
 				yield return new WaitForSeconds(Time.deltaTime);
 			}
 		}
-		_animator.SetFloat("VSpeed",0);
-		StartCoroutine(ChangeFov());
+	}
+
+	IEnumerator SleepWell()
+	{
+		var time = BeforeStopmotionDelay * 0.9f;
+		yield return new WaitForSeconds(time);
+		while (time < BeforeStopmotionDelay)
+		{
+			Fader.color = new Color(0, 0, 0, 3*time / BeforeStopmotionDelay);
+			yield return new WaitForSeconds(Time.deltaTime);
+		}
+	}
+	IEnumerator DoStartCutscene()
+	{
+		sittingCamera.transform.position = CameraStartTransitions[0].position;
+		sittingCamera.transform.rotation = CameraStartTransitions[0].rotation;
+		sittingCamera.fieldOfView = CameraStartFovs[0];
+
+		yield return new WaitForSeconds(1.0f);
+		StartCoroutine(MoveCamera(CameraStartTransitions, CameraStartFovs, DramaticBeforeHitDelay));
 		yield return new WaitForSeconds(DramaticBeforeHitDelay);
-		_animator.SetBool("Punching",true);
+		Animators[1].GetComponent<Animator>().SetBool("Punch",true);
+		StartCoroutine(ChangeFov());
 		StartCoroutine(SleepWell());
 		yield return new WaitForSeconds(BeforeStopmotionDelay);
-		_animator.speed = 0;
+		foreach (var anim in Animators)
+		{
+			anim.GetComponent<Animator>().speed = 0;
+		}
 		yield return new WaitForSeconds(DramaticAfterHitDelay);
 		Player.SetActive(true);
 		sittingCamera.enabled = false;
