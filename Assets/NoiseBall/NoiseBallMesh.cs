@@ -35,7 +35,7 @@ namespace NoiseBall
 
             _mesh.Clear();
 
-            var builder = new Emgen.IcosphereBuilder();
+            var builder = new Emgen.CuboidBuilder();
             for (var i = 0; i < _subdivisionLevel; i++)
                 builder.Subdivide();
 
