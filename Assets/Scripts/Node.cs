@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Node")]
-public class Node : ScriptableObject {
-	[Multiline] public string key;
-	public AudioClip clip;
+public class Node : MonoBehaviour {
+	public AudioClip voiceClip;
+	public AudioClip objectClip;
 	public Transform originalObj;
 	public Transform clearObj;
 	public bool isSecretAgent;
