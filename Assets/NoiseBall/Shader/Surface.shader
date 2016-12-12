@@ -35,6 +35,7 @@
             o.Albedo = _Color.rgb;
             o.Metallic = _Metallic;
             o.Smoothness = _Glossiness;
+			o.Emission = _Color.rgb;
         }
 
         ENDCG
