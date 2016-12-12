@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 public static class Texts {
 	public static Dictionary<string, string> texts = new Dictionary<string, string>	{
@@ -8,7 +8,7 @@ public static class Texts {
 		{ "binoculars", "These would be quite useful for a hunter." },
 		{ "boots", "My feet still remember the thousands of footprints I left in the sand." },
 		{ "book-hunting", "Ah, I've read this book a few times through. I haven't seen Africa for a long time, but savanna still calls me." },
-		{ "rifle", "Aaaahhh, I remember now. The best gift I've ever received, a custom made XXX YYY. I took up hunting after I got it." },
+		{ "rifle", "Aaaahhh, I remember now. The best gift I've ever received, a custom made replica of a german rifle, specially fashioned for hunting, which quickly became my favourite hobby." },
 		{ "secret-ending", "I am far more dangerous than these guys are or ever will be." },
 		{ "photo-zebra", "Africa? I've been to Africa? I can't recall, but I've definitely taken this picture." },
 		{ "photo2-pro", "This is not the work of an amateur, however I don't think it's me. Who is this?" },
@@ -51,7 +51,7 @@ public static class Texts {
 		{ "clock-reveal", "The time waits for no one. I had to quit, I was too old for this shit." },
 		{ "newspaper-reveal", "My old partner. We could only talk during assignments, never outside work. I wonder what he's up to." },
 		{ "lampshade", "More than once I killed a man with a lampshade, it has a good heavy feel to it. However, it's a bit out of reach." },
-		{ "belts", "Good thing I still carry a knife with me. My hand remember all the moves..." },
+		{ "belts", "Good thing I still carry a knife with me. My hands remember all the moves..." },
 		{ "burglars-rip", "Double-click this passage to edit it." }
 	};
 }

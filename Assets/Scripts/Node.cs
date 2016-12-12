@@ -8,5 +8,6 @@ public class Node : MonoBehaviour {
 	public Transform originalObj;
 	public Transform clearObj;
 	public bool isSecretAgent;
+	public bool visited;
 	public Node[] associations;
 }
