@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class MainCameraControl : MonoBehaviour
 {
     //public GameObject look_camera;
     public UiMessage ui_message;
-    public IngameMenuFns ingame_menu;
     public aimController aim_controller;
 
     public float mouseSensitivity = 5.0f;        // Mouse rotation sensitivity.
@@ -36,32 +36,12 @@ public class MainCameraControl : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Q))
-        {
-            // Toggle mode.
-            walkerMode = !walkerMode;
-        }
-        /*if (Input.GetMouseButton(0))
-        {
-            ui_message.show_message(@"Not a penny. I have been content, sir, you should lay my countenance to pawn; I have grated upon my good friends for three reprieves for you and your coach-fellow Nym; or else you had looked through the grate, like a geminy of baboons. I am damned in hell for swearing to gentlemen my friends, you were good soldiers and tall fellows; and when Mistress Bridget lost the handle of her fan, I took't upon mine honour thou hadst it not.");
-        }*/
-
+        if (Input.GetKeyUp(KeyCode.Q)) { walkerMode = !walkerMode; }
+        if (Input.GetKeyDown(KeyCode.Escape)) { SceneManager.LoadScene(0); }
     }
 
     void LateUpdate()
     {
-        if (ingame_menu.is_active)
-        {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.Confined;
-            return;
-        }
-        else
-        {
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-
         // FOV
         var cam = gameObject.GetComponent<Camera>();
         if (Input.GetButton("Fire2"))
