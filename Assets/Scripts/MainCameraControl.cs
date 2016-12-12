@@ -65,9 +65,9 @@ public class MainCameraControl : MonoBehaviour
         // FOV
         var cam = gameObject.GetComponent<Camera>();
         if (Input.GetButton("Fire2"))
-            cam.fov = Mathf.Lerp(cam.fov, zoomed_fov, zoom_speed);
+            cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, zoomed_fov, zoom_speed);
         else
-            cam.fov = Mathf.Lerp(cam.fov, normal_fov, zoom_speed);
+            cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, normal_fov, zoom_speed);
 
         // Mouse commands.
         float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivity;
