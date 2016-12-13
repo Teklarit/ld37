@@ -108,7 +108,7 @@ public class NodeWalker : MonoBehaviour {
         {
             audio3.PlayOneShot(obj_sound, 1.0f);
             audio2.clip = voice_sound;
-            audio2.PlayDelayed(obj_sound.length);
+            audio2.PlayDelayed(1.0f);//obj_sound.length);
         }
         else if (voice_sound != null)
         {
