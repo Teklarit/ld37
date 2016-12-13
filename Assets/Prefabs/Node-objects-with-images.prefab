@@ -1865,6 +1865,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1611458351630522
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4336744076234958}
+  - component: {fileID: 33730935762815676}
+  - component: {fileID: 64011148957158552}
+  - component: {fileID: 23193465196684256}
+  m_Layer: 8
+  m_Name: Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1620829680944808
 GameObject:
   m_ObjectHideFlags: 0
@@ -3770,6 +3788,19 @@ Transform:
   m_Father: {fileID: 4538361938729048}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4336744076234958
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1611458351630522}
+  m_LocalRotation: {x: 0.5099802, y: 0.48981655, z: -0.48981655, w: 0.5099802}
+  m_LocalPosition: {x: 2.7202, y: 0.7779, z: 0.579}
+  m_LocalScale: {x: 0.20446558, y: 0.29468337, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4515469957883250}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: -87.689}
 --- !u!4 &4339919711915772
 Transform:
   m_ObjectHideFlags: 1
@@ -4153,7 +4184,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.716, y: -0.773, z: -0.588}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4336744076234958}
   m_Father: {fileID: 4419903302295280}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5875,6 +5907,37 @@ MeshRenderer:
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!23 &23193465196684256
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1611458351630522}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: bf857501d9f74424b967e28c889a9445, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_SelectedEditorRenderState: 3
@@ -7766,6 +7829,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1433518772458106}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &33730935762815676
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1611458351630522}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &33736012079992566
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -7864,6 +7934,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1811006713731972}
   m_Mesh: {fileID: 4300118, guid: 713fcc6878ebf404db70679a18e9b9d5, type: 3}
+--- !u!64 &64011148957158552
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1611458351630522}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &64266092659449000
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -8444,7 +8528,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.01
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -8550,7 +8634,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.02
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -8572,7 +8656,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.02
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -8598,6 +8682,7 @@ MonoBehaviour:
   state: 0
   associations:
   - {fileID: 114512339043640628}
+  - {fileID: 114449337092359298}
 --- !u!114 &114150333331093082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8634,7 +8719,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.015
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -8656,7 +8741,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.015
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -8678,7 +8763,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.02
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -8700,7 +8785,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.015
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -8741,7 +8826,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.015
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -8778,13 +8863,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voiceClip: {fileID: 8300000, guid: d78c40812ec3f0342a80ea90d1eb43fc, type: 3}
-  objectClip: {fileID: 0}
+  objectClip: {fileID: 8300000, guid: dc7dd125c6c8da143a782555f5e0b3a7, type: 3}
   originalObj: {fileID: 4746355732460760}
   clearObj: {fileID: 4523548400278906}
   isSecretAgent: 0
   visited: 0
   state: 0
-  associations: []
+  associations:
+  - {fileID: 114449337092359298}
 --- !u!114 &114258887286283902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8823,7 +8909,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.02
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -8866,7 +8952,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.015
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -8888,7 +8974,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -8946,7 +9032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 8300000, guid: 1b298bc1cc7cff441bb78319000f049e, type: 3}
+  voiceClip: {fileID: 8300000, guid: f4f80e30a7b13ff4cb84795270f9c7ec, type: 3}
   objectClip: {fileID: 8300000, guid: 3f3c7fa76f055f2418e6ef694dc03f19, type: 3}
   originalObj: {fileID: 4055993270906520}
   clearObj: {fileID: 4405922264617040}
@@ -8970,7 +9056,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.02
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -8992,7 +9078,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.0125
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9014,7 +9100,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.025
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9036,7 +9122,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.015
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9116,7 +9202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voiceClip: {fileID: 8300000, guid: 91e69e13f422ff34283b60c14ced31e0, type: 3}
-  objectClip: {fileID: 8300000, guid: dc7dd125c6c8da143a782555f5e0b3a7, type: 3}
+  objectClip: {fileID: 8300000, guid: 025263177383a0749a6c4d1f223da254, type: 3}
   originalObj: {fileID: 4028173867521302}
   clearObj: {fileID: 4405603607452484}
   isSecretAgent: 0
@@ -9141,7 +9227,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9203,7 +9289,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.01
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9225,7 +9311,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.02
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9268,7 +9354,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.015
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9290,7 +9376,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.01
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9332,7 +9418,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.015
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9397,7 +9483,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.015
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9440,7 +9526,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.02
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9462,7 +9548,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.02
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9503,7 +9589,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.02
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9546,7 +9632,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.025
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9628,7 +9714,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.015
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9689,7 +9775,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9756,7 +9842,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.0125
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9797,7 +9883,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.01
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9819,7 +9905,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.02
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9879,7 +9965,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.01
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1
@@ -9999,7 +10085,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.02
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  _surfaceColor: {r: 0, g: 0, b: 0, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 1

@@ -121,7 +121,7 @@ public class NodeWalker : MonoBehaviour {
 		}
 		// Hide all the associations for the current node that we've not used
 		if (currentNode) {
-			if (currentNode.name != "table-pinaterly" && currentNode.name != "table")
+			if (currentNode.name != "table-painterly" && currentNode.name != "table")
 				MarkPrevious(currentNode);
 			for (var i = 0; i < currentNode.associations.Length; i++)
 			{
@@ -147,9 +147,15 @@ public class NodeWalker : MonoBehaviour {
         AudioClip voice_sound = node.voiceClip;
         if (obj_sound != null && voice_sound != null)
         {
-            audio3.PlayOneShot(obj_sound, 1.0f);
+	        if (node.name == "big_box-radio") {
+		        audio1.Stop();
+		        audio1.clip = obj_sound;
+		        audio1.Play();
+	        } else {
+				audio3.PlayOneShot(obj_sound, 1.0f);
+	        }
             audio2.clip = voice_sound;
-            audio2.PlayDelayed(1.0f);//obj_sound.length);
+            audio2.PlayDelayed(1.0f);
         }
         else if (voice_sound != null)
         {
@@ -187,8 +193,10 @@ public class NodeWalker : MonoBehaviour {
 		trophy.transform.FindChild("sport_trophy_01").gameObject.SetActive(false);
 		GoNode(startNode);
 
-        audio1.PlayOneShot(music, music_volume);
-    }
+		audio1.clip = music;
+		audio1.volume = music_volume;
+		audio1.Play();
+	}
 	
 	void Update () {
         if (audio3.isPlaying)
