@@ -29,7 +29,10 @@ public class GameCutscene : MonoBehaviour
 	public GameObject KnifeLose;
 	public Transform EndCamera;
 
-	void Start ()
+    public AudioSource audio1;
+    public AudioClip audocl;
+
+    void Start ()
 	{
 		//_animator = Burglar.GetComponent<Animator>();
 		StartCoroutine(DoStartCutscene());
@@ -170,6 +173,9 @@ public class GameCutscene : MonoBehaviour
 	}
 	IEnumerator DoStartCutscene()
 	{
+        // 
+        audio1.PlayOneShot(audocl, 1.0f);
+
 		sittingCamera.transform.position = CameraStartTransitions[0].position;
 		sittingCamera.transform.rotation = CameraStartTransitions[0].rotation;
 		sittingCamera.fieldOfView = CameraStartFovs[0];
