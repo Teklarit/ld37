@@ -12,7 +12,8 @@ public class Node : MonoBehaviour {
 	public enum State {
 		HIDDEN,
 		ASSOCIATED,
-		REVEALED
+		REVEALED,
+		PREVIOUS
 	}
 	public State state;
 	public Node[] associations;

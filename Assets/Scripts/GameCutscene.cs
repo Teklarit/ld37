@@ -32,6 +32,10 @@ public class GameCutscene : MonoBehaviour
     public AudioSource audio1;
     public AudioClip audocl;
 
+	public UiMessage UIMessage;
+
+	private int endSecretAgent;
+
     void Start ()
 	{
 		//_animator = Burglar.GetComponent<Animator>();
@@ -42,8 +46,8 @@ public class GameCutscene : MonoBehaviour
 	{
 		StartCoroutine(DoWinCutscene());
 	}
-	public void TriggerLoseSequence()
-	{
+	public void TriggerLoseSequence(int secretAgent) {
+		endSecretAgent = secretAgent;
 		StartCoroutine(DoLoseCutscene());
 	}
 
@@ -123,7 +127,10 @@ public class GameCutscene : MonoBehaviour
 		KnifeLose.SetActive(true);
 		yield return new WaitForSeconds(1.0f);
 		Fader3.CrossFadeAlpha(0,0.5f,true);
-		yield return new WaitForSeconds(5.0f);
+		yield return new WaitForSeconds(1.0f);
+		UIMessage.show_message("No, this is not how it went. Ah, I remember now... \n(" + endSecretAgent + "/7 key memories found)");
+		UIMessage.gameObject.SetActive(true);
+		yield return new WaitForSeconds(10.0f);
 		print("Game Over");
 		UnityEngine.SceneManagement.SceneManager.LoadScene(0);
 		Cursor.lockState = CursorLockMode.Confined;

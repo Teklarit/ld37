@@ -21,13 +21,24 @@ public class NodeWalker : MonoBehaviour {
 	public LayerMask interactibleLayer;
 	[ColorUsage(false, true, 0, 8, 0.125f, 3)] public Color hidden;
 	[ColorUsage(false, true, 0, 8, 0.125f, 3)] public Color revealed;
+	[ColorUsage(false, true, 0, 8, 0.125f, 3)] public Color previous;
 
+	private void MarkPrevious(Node node) {
+		if (!node.originalObj) return;
+		var blob = node.originalObj.FindChild("blob");
+		blob.gameObject.SetActive(true);
+		blob.GetComponent<NoiseBallRendererFixed>()._surfaceColor = previous;
+		blob.GetComponent<NoiseBallRendererFixed>()._noiseMotion = 0.25f;
+		node.clearObj.gameObject.SetActive(false);
+		node.state = Node.State.PREVIOUS;
+	}
 
 	private void Unreveal(Node node) {
 		if (!node.originalObj) return;
 		var blob = node.originalObj.FindChild("blob");
 		blob.gameObject.SetActive(true);
 		blob.GetComponent<NoiseBallRendererFixed>()._surfaceColor = hidden;
+		blob.GetComponent<NoiseBallRendererFixed>()._noiseMotion = 1;
 		node.originalObj.GetComponent<BoxCollider>().enabled = false;
 		node.clearObj.gameObject.SetActive(false);
 		node.state = Node.State.HIDDEN;
@@ -54,7 +65,10 @@ public class NodeWalker : MonoBehaviour {
 		if (node.name == "burglars" && secretAgent < 7)
 		{
 			node.originalObj.gameObject.SetActive(false);
-			cutscene.TriggerLoseSequence();
+			var trophy = GameObject.Find("prize-trophy:origin");
+			trophy.transform.FindChild("blob").gameObject.SetActive(false);
+			trophy.transform.FindChild("sport_trophy_01").gameObject.SetActive(true);
+			cutscene.TriggerLoseSequence(secretAgent);
 			UIMessage.gameObject.SetActive(false);
 			return;
 		}
@@ -88,33 +102,14 @@ public class NodeWalker : MonoBehaviour {
 			Unreveal(writer);
 			Associate(painterly);
 		}
-		{
-			var currentRenderer = node.clearObj.GetComponent<Renderer>();
-			if (currentRenderer)
-			{
-				for (var i = 0; i < currentRenderer.materials.Length; i++)
-				{
-					var material = currentRenderer.materials[i];
-					material.SetColor("_EmissionColor", Color.black);
-				}
-			}
-		}
 		// Hide node previous to the one we currently have, not the one we're going to
 		if (prevNode) {
-			var currentRenderer = prevNode.clearObj.GetComponent<Renderer>();
-			if (currentRenderer)
-			{
-				for (var i = 0; i < currentRenderer.materials.Length; i++)
-				{
-					var material = currentRenderer.materials[i];
-					material.SetColor("_EmissionColor", Color.black);
-				}
-			}
 			// Can't hide table my stuff is on
 			if (prevNode.name != "table-painterly" && prevNode.name != "table") {
 				Unreveal(prevNode);
-			} else
+			} else {
 				prevNode.originalObj.GetComponent<BoxCollider>().enabled = false;
+			}
 
 			// Hid the table first opportunity we get moving away from it
 			//var zebraToProPhoto = prevNode.name == "other-pictures" && currentNode.name == "photo-zebra";
@@ -126,15 +121,8 @@ public class NodeWalker : MonoBehaviour {
 		}
 		// Hide all the associations for the current node that we've not used
 		if (currentNode) {
-			var currentRenderer = currentNode.clearObj.GetComponent<Renderer>();
-			if (currentRenderer)
-			{
-				for (var i = 0; i < currentRenderer.materials.Length; i++)
-				{
-					var material = currentRenderer.materials[i];
-					material.SetColor("_EmissionColor", new Color(0f, 0.15f, 0f));
-				}
-			}
+			if (currentNode.name != "table-pinaterly" && currentNode.name != "table")
+				MarkPrevious(currentNode);
 			for (var i = 0; i < currentNode.associations.Length; i++)
 			{
 				Unreveal(currentNode.associations[i]);

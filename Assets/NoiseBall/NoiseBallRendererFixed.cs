@@ -16,13 +16,13 @@ namespace NoiseBall
         float _radius = 1.0f;
 
         [SerializeField]
-        float _noiseAmplitude = 0.05f;
+        public float _noiseAmplitude = 0.05f;
 
         [SerializeField]
         float _noiseFrequency = 1.0f;
 
         [SerializeField]
-        float _noiseMotion = 0.2f;
+        public float _noiseMotion = 0.2f;
 
         [Space]
 
