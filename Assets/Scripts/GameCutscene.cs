@@ -181,7 +181,7 @@ public class GameCutscene : MonoBehaviour
 		yield return new WaitForSeconds(BeforeStopmotionDelay);
 		foreach (var anim in Animators)
 		{
-			anim.GetComponent<Animator>().StopPlayback();
+			anim.GetComponent<Animator>().speed = 0;
 		}
 		yield return new WaitForSeconds(DramaticAfterHitDelay);
 		sittingCamera.gameObject.SetActive(false);
