@@ -7,6 +7,7 @@ public class GameCutscene : MonoBehaviour
 {
 	public Image Fader;
 	public Image Fader2;
+	public Image Fader3;
 	public GameObject Player;
 	public Camera sittingCamera;
 	public float StartTalkDelay = 1.0f;
@@ -60,7 +61,8 @@ public class GameCutscene : MonoBehaviour
 		sittingCamera.fieldOfView = CameraWinFovs[0];
 		Knife.SetActive(true);
 		Player.SetActive(false);
-		sittingCamera.enabled = true;
+		//sittingCamera.enabled = true;
+		sittingCamera.gameObject.SetActive(true);
 		Fader2.CrossFadeAlpha(0,1.0f,true);
 		StartCoroutine(MoveCamera(CameraWinTransitions, CameraWinFovs, DramaticWinCameraSequenceTime));
 		yield return new WaitForSeconds(DramaticWinCameraSequenceTime);
@@ -88,7 +90,13 @@ public class GameCutscene : MonoBehaviour
 	{
 		Fader2.color = new Color(0, 0, 0, 1.0f);
 		Player.SetActive(false);
-		sittingCamera.enabled = true;
+		sittingCamera.transform.position = CameraLoseTransitions[0].position;
+		sittingCamera.transform.rotation = CameraLoseTransitions[0].rotation;
+		sittingCamera.fieldOfView = CameraLoseFovs[0];
+		sittingCamera.gameObject.SetActive(true);
+		//sittingCamera.enabled = true;
+		Fader2.CrossFadeAlpha(0,1.0f,true);
+		yield return new WaitForSeconds(1.0f);
 		//staticHeroModel.SetActive(false);
 		//dynamicHeroModel.SetActive(true);
 		foreach (var anim in Animators)
@@ -99,11 +107,21 @@ public class GameCutscene : MonoBehaviour
 			animator.speed = 1;
 			animator.SetBool("WakeUp", true);
 		}
-		Fader2.CrossFadeAlpha(0,1.0f,true);
+		yield return new WaitForSeconds(2.0f);
 		StartCoroutine(MoveCamera(CameraLoseTransitions, CameraLoseFovs, DramaticLoseCameraSequenceTime));
 		yield return new WaitForSeconds(DramaticLoseCameraSequenceTime*0.8f);
+		foreach (var anim in Animators)
+		{
+			var animator = anim.GetComponent<Animator>();
+			animator.SetBool("Punch", true);
+		}
+		Fader3.color = new Color(0, 0, 0, 1.0f);
 		KnifeLose.SetActive(true);
-
+		yield return new WaitForSeconds(1.0f);
+		Fader3.CrossFadeAlpha(0,0.5f,true);
+		yield return new WaitForSeconds(5.0f);
+		print("Game Over");
+		UnityEngine.SceneManagement.SceneManager.LoadScene(0);
 		yield return null;
 	}
 
@@ -166,11 +184,9 @@ public class GameCutscene : MonoBehaviour
 			anim.GetComponent<Animator>().StopPlayback();
 		}
 		yield return new WaitForSeconds(DramaticAfterHitDelay);
+		sittingCamera.gameObject.SetActive(false);
 		Player.SetActive(true);
-		sittingCamera.enabled = false;
 		Fader.CrossFadeAlpha(0.0f,1.5f,true);
-		yield return new WaitForSeconds(DramaticAfterHitDelay);
-		TriggerLoseSequence();
 		yield return null;
 	}
 

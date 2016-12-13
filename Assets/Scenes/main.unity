@@ -3130,11 +3130,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 114367883552139844, guid: 7b9fe23a32081b84aa0718c76879f961,
-        type: 2}
-      propertyPath: ui_message
-      value: 
-      objectReference: {fileID: 983476663}
     - target: {fileID: 114640078868611160, guid: 7b9fe23a32081b84aa0718c76879f961,
         type: 2}
       propertyPath: startNode
@@ -3145,71 +3140,11 @@ Prefab:
       propertyPath: UIMessage
       value: 
       objectReference: {fileID: 983476663}
-    - target: {fileID: 114847326333994326, guid: 7b9fe23a32081b84aa0718c76879f961,
+    - target: {fileID: 114367883552139844, guid: 7b9fe23a32081b84aa0718c76879f961,
         type: 2}
-      propertyPath: m_Sprite
+      propertyPath: ui_message
       value: 
-      objectReference: {fileID: 21300000, guid: c53bc0be412255e49a0d88931cbf2500,
-        type: 3}
-    - target: {fileID: 114640078868611160, guid: 7b9fe23a32081b84aa0718c76879f961,
-        type: 2}
-      propertyPath: test.rgba
-      value: 9356152
-      objectReference: {fileID: 0}
-    - target: {fileID: 114640078868611160, guid: 7b9fe23a32081b84aa0718c76879f961,
-        type: 2}
-      propertyPath: hidden.r
-      value: 7.898581
-      objectReference: {fileID: 0}
-    - target: {fileID: 114640078868611160, guid: 7b9fe23a32081b84aa0718c76879f961,
-        type: 2}
-      propertyPath: hidden.g
-      value: 0.64705896
-      objectReference: {fileID: 0}
-    - target: {fileID: 114640078868611160, guid: 7b9fe23a32081b84aa0718c76879f961,
-        type: 2}
-      propertyPath: hidden.b
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114640078868611160, guid: 7b9fe23a32081b84aa0718c76879f961,
-        type: 2}
-      propertyPath: hidden.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114640078868611160, guid: 7b9fe23a32081b84aa0718c76879f961,
-        type: 2}
-      propertyPath: revealed.r
-      value: 1.366728
-      objectReference: {fileID: 0}
-    - target: {fileID: 114640078868611160, guid: 7b9fe23a32081b84aa0718c76879f961,
-        type: 2}
-      propertyPath: revealed.g
-      value: 6.2322793
-      objectReference: {fileID: 0}
-    - target: {fileID: 114640078868611160, guid: 7b9fe23a32081b84aa0718c76879f961,
-        type: 2}
-      propertyPath: revealed.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114640078868611160, guid: 7b9fe23a32081b84aa0718c76879f961,
-        type: 2}
-      propertyPath: revealed.b
-      value: 2.0253968
-      objectReference: {fileID: 0}
-    - target: {fileID: 1153914554334048, guid: 7b9fe23a32081b84aa0718c76879f961, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 20208594881811360, guid: 7b9fe23a32081b84aa0718c76879f961,
-        type: 2}
-      propertyPath: m_RenderingPath
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114602584457276170, guid: 7b9fe23a32081b84aa0718c76879f961,
-        type: 2}
-      propertyPath: DramaticLoseCameraSequenceTime
-      value: 6
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 983476663}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b9fe23a32081b84aa0718c76879f961, type: 2}
   m_IsPrefabParent: 0
