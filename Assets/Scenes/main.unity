@@ -814,7 +814,7 @@ GameObject:
   m_PrefabParentObject: {fileID: 1158817396499280, guid: 7b9fe23a32081b84aa0718c76879f961,
     type: 2}
   m_PrefabInternal: {fileID: 923289129}
---- !u!114 &204960094
+--- !u!114 &204960108
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -832,7 +832,7 @@ MonoBehaviour:
   rotationScale: 1
   maxVelocity: 8
   minVelocity: 0.1
-  velocityScale: 0.7
+  velocityScale: 1
   softZDistance: 0.005
   velocityDownsample: 1
   excludeLayers:
