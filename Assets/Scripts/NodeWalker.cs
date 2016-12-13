@@ -51,12 +51,28 @@ public class NodeWalker : MonoBehaviour {
 	}
 
 	private void GoNode(Node node) {
-		if (node.name == "burglars")
+		if (node.name == "burglars" && secretAgent < 7)
 		{
 			node.originalObj.gameObject.SetActive(false);
 			cutscene.TriggerLoseSequence();
 			UIMessage.gameObject.SetActive(false);
 			return;
+		}
+		if (node.name == "burglars" && currentNode.name == "belts")
+		{
+			node.originalObj.gameObject.SetActive(false);
+			cutscene.TriggerWinSequence();
+			UIMessage.gameObject.SetActive(false);
+			return;
+		}
+		if (node.name == "passport-reveal")
+		{
+			Reveal(GameObject.Find("table-painterly").GetComponent<Node>());
+		}
+		if (node.name == "pictures-reveal")
+		{
+			Unreveal(GameObject.Find("table-painterly").GetComponent<Node>());
+			Reveal(GameObject.Find("table").GetComponent<Node>());
 		}
 		Debug.Log("---------------------------------------------");
 		Debug.Log("NEW NODE: " + node);
@@ -148,6 +164,7 @@ public class NodeWalker : MonoBehaviour {
 
 	void Start () {
 		history = new Stack<Node>();
+		//GameObject.Find("burglars:origin").SetActive(true);
 		GoNode(startNode);
 
         audio1.PlayOneShot(music, music_volume);

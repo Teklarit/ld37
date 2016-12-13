@@ -809,6 +809,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 181157178}
   m_Mesh: {fileID: 4300038, guid: 713fcc6878ebf404db70679a18e9b9d5, type: 3}
+--- !u!114 &183935863 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114684303467079732, guid: 69951d9b258dd634e9e2f31befe67e37,
+    type: 2}
+  m_PrefabInternal: {fileID: 960804960}
+  m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
 --- !u!1 &229865584
 GameObject:
   m_ObjectHideFlags: 0
@@ -3315,6 +3321,31 @@ Prefab:
       propertyPath: voiceClip
       value: 
       objectReference: {fileID: 8300000, guid: 542a909cd277ff14ea345106a9a18335, type: 3}
+    - target: {fileID: 114684303467079732, guid: 69951d9b258dd634e9e2f31befe67e37,
+        type: 2}
+      propertyPath: associations.Array.data[1]
+      value: 
+      objectReference: {fileID: 1039953228}
+    - target: {fileID: 114982892999657800, guid: 69951d9b258dd634e9e2f31befe67e37,
+        type: 2}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ce1cc1da2eed2be46ab832bad23d1cf7, type: 3}
+    - target: {fileID: 114150333331093082, guid: 69951d9b258dd634e9e2f31befe67e37,
+        type: 2}
+      propertyPath: associations.Array.data[0]
+      value: 
+      objectReference: {fileID: 183935863}
+    - target: {fileID: 114823720064156820, guid: 69951d9b258dd634e9e2f31befe67e37,
+        type: 2}
+      propertyPath: voiceClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 467c8c91cee0b15498af3d761b45cc73, type: 3}
+    - target: {fileID: 114823720064156820, guid: 69951d9b258dd634e9e2f31befe67e37,
+        type: 2}
+      propertyPath: objectClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 497de4a2c3894fd4f87a5af2dbc670fa, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 69951d9b258dd634e9e2f31befe67e37, type: 2}
   m_IsPrefabParent: 0
@@ -3594,6 +3625,12 @@ Transform:
   m_Father: {fileID: 596662120}
   m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1039953228 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114870329899642236, guid: 69951d9b258dd634e9e2f31befe67e37,
+    type: 2}
+  m_PrefabInternal: {fileID: 960804960}
+  m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
 --- !u!1 &1059717207
 GameObject:
   m_ObjectHideFlags: 0
@@ -5442,7 +5479,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1551178123
 Transform:
   m_ObjectHideFlags: 0
@@ -6140,7 +6177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1713683354
 Transform:
   m_ObjectHideFlags: 0
@@ -6150,7 +6187,7 @@ Transform:
   m_GameObject: {fileID: 1713683353}
   m_LocalRotation: {x: 0.0016997148, y: 0.038235687, z: -0.0061296783, w: 0.9992485}
   m_LocalPosition: {x: -0.003, y: 0.123, z: 0.286}
-  m_LocalScale: {x: 0.31191224, y: 0.31191218, z: 0.31191218}
+  m_LocalScale: {x: 0.34072068, y: 0.34072062, z: 0.34072062}
   m_Children: []
   m_Father: {fileID: 1775180811}
   m_RootOrder: 0
@@ -6324,7 +6361,7 @@ GameObject:
   - component: {fileID: 1775180811}
   - component: {fileID: 1775180812}
   m_Layer: 8
-  m_Name: prize-trophy:origin
+  m_Name: burglars:origin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6355,7 +6392,7 @@ BoxCollider:
   m_GameObject: {fileID: 1775180810}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.2513491, y: 0.23041916, z: 0.28586894}
   m_Center: {x: -0.0032668554, y: 0.14267862, z: 0.28065425}
