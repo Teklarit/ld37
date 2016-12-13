@@ -1725,6 +1725,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4728456726464500}
   - component: {fileID: 65369895521998610}
+  - component: {fileID: 65970233223532126}
   m_Layer: 8
   m_Name: painting-canvas:origin
   m_TagString: Untagged
@@ -8332,6 +8333,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.28274468, y: 0.12750585, z: 0.20798242}
   m_Center: {x: -0.008373976, y: -0.02011609, z: -0.012516499}
+--- !u!65 &65970233223532126
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1535221552203342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48223263, y: 1, z: 0.47648442}
+  m_Center: {x: -0.03953123, y: 0, z: 0.02002716}
 --- !u!65 &65972709766095058
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -8360,7 +8373,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.01
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -8466,7 +8479,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -8488,7 +8501,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -8550,7 +8563,7 @@ MonoBehaviour:
   _noiseAmplitude: 0
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -8572,7 +8585,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -8594,7 +8607,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -8616,7 +8629,7 @@ MonoBehaviour:
   _noiseAmplitude: 0
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -8657,7 +8670,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -8739,7 +8752,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -8782,7 +8795,7 @@ MonoBehaviour:
   _noiseAmplitude: 0
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -8804,7 +8817,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -8886,7 +8899,7 @@ MonoBehaviour:
   _noiseAmplitude: 0
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -8908,7 +8921,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.02
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -8930,7 +8943,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -8952,7 +8965,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9057,7 +9070,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9119,7 +9132,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.02
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9141,7 +9154,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9184,7 +9197,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9206,7 +9219,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9248,7 +9261,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9313,7 +9326,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9356,7 +9369,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9378,7 +9391,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9419,7 +9432,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9462,7 +9475,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9544,7 +9557,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.03
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9605,7 +9618,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9672,7 +9685,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9713,7 +9726,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.03
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9735,7 +9748,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9795,7 +9808,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0
@@ -9915,7 +9928,7 @@ MonoBehaviour:
   _noiseAmplitude: 0.04
   _noiseFrequency: 1
   _noiseMotion: 1
-  _surfaceColor: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
+  _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
   _castShadows: 0

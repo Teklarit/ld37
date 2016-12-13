@@ -9940,8 +9940,8 @@ MonoBehaviour:
   interactibleLayer:
     serializedVersion: 2
     m_Bits: 256
-  hidden: {r: 7.898581, g: 0.64705896, b: 8, a: 1}
-  revealed: {r: 1.366728, g: 6.2322793, b: 2.0253968, a: 1}
+  hidden: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
+  revealed: {r: 0.25270328, g: 0.30147058, b: 0.2770869, a: 1}
 --- !u!114 &114693179028859504
 MonoBehaviour:
   m_ObjectHideFlags: 1
