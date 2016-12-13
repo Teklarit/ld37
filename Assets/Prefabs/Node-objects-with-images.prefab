@@ -1724,6 +1724,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4728456726464500}
+  - component: {fileID: 65369895521998610}
   m_Layer: 8
   m_Name: painting-canvas:origin
   m_TagString: Untagged
@@ -8019,6 +8020,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1019354, y: 0.5954244, z: 1.8190988}
   m_Center: {x: -0.024074316, y: 0.047712177, z: 0.035554707}
+--- !u!65 &65369895521998610
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1535221552203342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48223263, y: 1, z: 0.47648442}
+  m_Center: {x: -0.03953123, y: 0, z: 0.02002716}
 --- !u!65 &65387014098128992
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -8364,7 +8377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 8767174acc19a194ea1bfa516432a4a4, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4746355732460760}
   clearObj: {fileID: 4986982183223206}
@@ -8384,7 +8397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: da983bf7221eb994bba4daf6c498d81d, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4055993270906520}
   clearObj: {fileID: 4405922264617040}
@@ -8404,7 +8417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 3b57238edc30fd145a2664507ca17b44, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4887012177458902}
   clearObj: {fileID: 4524344513754528}
@@ -8426,8 +8439,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 1b298bc1cc7cff441bb78319000f049e, type: 3}
+  objectClip: {fileID: 8300000, guid: 8783cb580b2b3374b8b59a28beaacfb3, type: 3}
   originalObj: {fileID: 4277458009480124}
   clearObj: {fileID: 4094996586497344}
   isSecretAgent: 0
@@ -8492,8 +8505,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: c9eb9e3d19bbec84f8c4933ebcd457b7, type: 3}
+  objectClip: {fileID: 8300000, guid: 51ab581f5ef6abf45b76fcd7a9014997, type: 3}
   originalObj: {fileID: 4862921714010734}
   clearObj: {fileID: 4466835723986802}
   isSecretAgent: 0
@@ -8512,7 +8525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 4ed7bd371921b6f4994ae775db85a1cf, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4076221087925142}
   clearObj: {fileID: 4771035642701464}
@@ -8661,8 +8674,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: d5a422d3725e4da4380345d70be5d4eb, type: 3}
+  objectClip: {fileID: 8300000, guid: dcd3014cc7e675a4bac5153a1460e8cb, type: 3}
   originalObj: {fileID: 4746355732460760}
   clearObj: {fileID: 4740323818533568}
   isSecretAgent: 0
@@ -8680,7 +8693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: d78c40812ec3f0342a80ea90d1eb43fc, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4746355732460760}
   clearObj: {fileID: 4523548400278906}
@@ -8699,7 +8712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 7ddcb1d79b1d3b040b059d508de9c1b7, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4284279939834962}
   clearObj: {fileID: 4106735898308750}
@@ -8743,8 +8756,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 63d2a91c6fcd2a94cab82637366b37bc, type: 3}
+  objectClip: {fileID: 8300000, guid: e03358fe47316e94597b73af9774667c, type: 3}
   originalObj: {fileID: 4793121785626096}
   clearObj: {fileID: 4543437252027426}
   isSecretAgent: 0
@@ -8808,8 +8821,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 81e3f0e1c214de44ab79bfb68ab14b1c, type: 3}
+  objectClip: {fileID: 8300000, guid: 05b0742f1ca75f84aaa1897f65939c20, type: 3}
   originalObj: {fileID: 4533331803819860}
   clearObj: {fileID: 4694663880520412}
   isSecretAgent: 1
@@ -8829,7 +8842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 99219946a7707e34294f7daa24bb3d98, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4584475842113722}
   clearObj: {fileID: 4686070274486254}
@@ -8849,8 +8862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 1b298bc1cc7cff441bb78319000f049e, type: 3}
+  objectClip: {fileID: 8300000, guid: 3f3c7fa76f055f2418e6ef694dc03f19, type: 3}
   originalObj: {fileID: 4055993270906520}
   clearObj: {fileID: 4405922264617040}
   isSecretAgent: 1
@@ -8956,8 +8969,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: b10863c875db19d4fb95e2a78c6f2613, type: 3}
+  objectClip: {fileID: 8300000, guid: e5708e0789df17643906f5560c563784, type: 3}
   originalObj: {fileID: 4797487831561674}
   clearObj: {fileID: 4837147348112456}
   isSecretAgent: 0
@@ -8976,7 +8989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 580121f44e17e4040837ecde54f07c2d, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 0}
   clearObj: {fileID: 0}
@@ -8997,8 +9010,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 7f6f664cf6d52fb44958420c286b802c, type: 3}
+  objectClip: {fileID: 8300000, guid: dc7dd125c6c8da143a782555f5e0b3a7, type: 3}
   originalObj: {fileID: 4759181436828876}
   clearObj: {fileID: 4945318893201192}
   isSecretAgent: 0
@@ -9018,8 +9031,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 91e69e13f422ff34283b60c14ced31e0, type: 3}
+  objectClip: {fileID: 8300000, guid: dc7dd125c6c8da143a782555f5e0b3a7, type: 3}
   originalObj: {fileID: 4028173867521302}
   clearObj: {fileID: 4405603607452484}
   isSecretAgent: 0
@@ -9061,7 +9074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 1ee7e9e111bd03041bccd9a3da7d9972, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4208244395905360}
   clearObj: {fileID: 4530009121601794}
@@ -9080,7 +9093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 9131b2dc97ee0e24aaa68688185ab834, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4759181436828876}
   clearObj: {fileID: 4137489758884436}
@@ -9145,8 +9158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 84b6a9dfd19fe2843819294675b7e14c, type: 3}
+  objectClip: {fileID: 8300000, guid: 8783cb580b2b3374b8b59a28beaacfb3, type: 3}
   originalObj: {fileID: 4986066533124050}
   clearObj: {fileID: 4648136205919378}
   isSecretAgent: 0
@@ -9210,8 +9223,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: decedb671bfe6ee46868ee19d011c855, type: 3}
+  objectClip: {fileID: 8300000, guid: 05b0742f1ca75f84aaa1897f65939c20, type: 3}
   originalObj: {fileID: 4533331803819860}
   clearObj: {fileID: 4694663880520412}
   isSecretAgent: 0
@@ -9252,7 +9265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 4424a8efa61a0a643be5f8e0d1136d12, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4985561983952240}
   clearObj: {fileID: 4472520028584562}
@@ -9274,7 +9287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 14a126ab54d64f740b4cace9967ee8c5, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4776751734112158}
   clearObj: {fileID: 4309876141738228}
@@ -9317,8 +9330,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: e4f103612b07a2841b17043fc99a843b, type: 3}
+  objectClip: {fileID: 8300000, guid: 985c04b069366304fb626c35953fe84f, type: 3}
   originalObj: {fileID: 4126606198016866}
   clearObj: {fileID: 4083096596746782}
   isSecretAgent: 0
@@ -9466,8 +9479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: c0188b36056ddbd45a2fdab84f0ed49f, type: 3}
+  objectClip: {fileID: 8300000, guid: e5708e0789df17643906f5560c563784, type: 3}
   originalObj: {fileID: 4797487831561674}
   clearObj: {fileID: 4837147348112456}
   isSecretAgent: 1
@@ -9485,7 +9498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 5eb4965565fb1c94d88993360784d336, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4644616291178548}
   clearObj: {fileID: 4674498832430226}
@@ -9505,7 +9518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 46052f14f54efc94ab715dd640d3c621, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4963572501321264}
   clearObj: {fileID: 4055895336936200}
@@ -9548,7 +9561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: b49105238cdc53e4fb4597f53582c287, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4210541459903940}
   clearObj: {fileID: 4534897086023336}
@@ -9568,8 +9581,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: c5d2e0123f47e15448a6fbcfec7fce86, type: 3}
+  objectClip: {fileID: 8300000, guid: dd9bde1b874bb4f40aeb9dfa430e2130, type: 3}
   originalObj: {fileID: 4728456726464500}
   clearObj: {fileID: 4920229439448272}
   isSecretAgent: 0
@@ -9609,7 +9622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: c2ab3a2d1f897644dae1615e69695ce9, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4679546150042982}
   clearObj: {fileID: 4293379194718780}
@@ -9634,8 +9647,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: b85e2f79937d61442897bdaba953dee3, type: 3}
+  objectClip: {fileID: 8300000, guid: 0bb6eeecd27afe54e995965cad80e32f, type: 3}
   originalObj: {fileID: 4480276286089604}
   clearObj: {fileID: 4360126755590996}
   isSecretAgent: 0
@@ -9739,7 +9752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 497de4a2c3894fd4f87a5af2dbc670fa, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4916986930109532}
   clearObj: {fileID: 4936720170252468}
@@ -9799,7 +9812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 50773c72962ab6441adbc3eb84911f5d, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4802667195576652}
   clearObj: {fileID: 4757638871438970}
@@ -9819,8 +9832,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 1afc88f526cd3234691d7e0bf36bbb9a, type: 3}
+  objectClip: {fileID: 8300000, guid: 919c32b7b5c23ff4a967bc07ad81a35b, type: 3}
   originalObj: {fileID: 4302980727183664}
   clearObj: {fileID: 4151654294649030}
   isSecretAgent: 0
@@ -9838,7 +9851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: bd81dfbe6dd2b9942ad1e49cb2c41f45, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4210541459903940}
   clearObj: {fileID: 4320117752983662}
@@ -9859,7 +9872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 2616006ec2355df4c90cadd12248ce7a, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4834982979233640}
   clearObj: {fileID: 4457089112494638}
@@ -9878,8 +9891,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 65d76e39f96266240a3365f4d513da07, type: 3}
+  objectClip: {fileID: 8300000, guid: 14af73137ecd20d42a3d9dd00abf1853, type: 3}
   originalObj: {fileID: 4714687400515834}
   clearObj: {fileID: 4312895775351980}
   isSecretAgent: 0
@@ -9919,7 +9932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 31b66258ba03529499cfb88aad01cd61, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4781177660145260}
   clearObj: {fileID: 4094174339071554}
@@ -9940,7 +9953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 542a909cd277ff14ea345106a9a18335, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 0}
   clearObj: {fileID: 0}
@@ -9960,8 +9973,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 67e8cc5dae11e7740b241be177235d5d, type: 3}
+  objectClip: {fileID: 8300000, guid: 919c32b7b5c23ff4a967bc07ad81a35b, type: 3}
   originalObj: {fileID: 4420695087416914}
   clearObj: {fileID: 4512065771020530}
   isSecretAgent: 1
@@ -9979,8 +9992,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 006a087e12e2c904f85e5a71f93f5ce3, type: 3}
+  objectClip: {fileID: 8300000, guid: 0393693768dbc2146b1a0ec669bab017, type: 3}
   originalObj: {fileID: 4802667195576652}
   clearObj: {fileID: 4757638871438970}
   isSecretAgent: 1
@@ -9998,8 +10011,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 4753183dd559b7b41b2efe17de9635b2, type: 3}
+  objectClip: {fileID: 8300000, guid: 434a82bbd76b3d949bd168562bb54edd, type: 3}
   originalObj: {fileID: 4644616291178548}
   clearObj: {fileID: 4674498832430226}
   isSecretAgent: 1
@@ -10017,8 +10030,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 4f3f65b7bc8dd364e8049d76b6e57ea0, type: 3}
+  objectClip: {fileID: 8300000, guid: 3f3c7fa76f055f2418e6ef694dc03f19, type: 3}
   originalObj: {fileID: 4420695087416914}
   clearObj: {fileID: 4512065771020530}
   isSecretAgent: 0
@@ -10037,8 +10050,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  objectClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 467c8c91cee0b15498af3d761b45cc73, type: 3}
+  objectClip: {fileID: 8300000, guid: 497de4a2c3894fd4f87a5af2dbc670fa, type: 3}
   originalObj: {fileID: 4916986930109532}
   clearObj: {fileID: 4936720170252468}
   isSecretAgent: 0
@@ -10058,7 +10071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: a7b2bdf516f71e343bad499197b9b8ff, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4876036096683406}
   clearObj: {fileID: 4102244541368220}
@@ -10079,7 +10092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 4d7ff00caa3a0ae4687b9ca739fab00e, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4887012177458902}
   clearObj: {fileID: 4701496916862068}
@@ -10101,7 +10114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: f07c2326fca52e340a2730ce74aa6a69, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 4419903302295280}
   clearObj: {fileID: 4515469957883250}
