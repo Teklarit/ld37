@@ -9,7 +9,7 @@ public static class Texts {
 		{ "boots", "My feet still remember the thousands of footprints I left in the sand." },
 		{ "book-hunting", "Ah, I've read this book a few times through. I haven't seen Africa for a long time, but savanna still calls me." },
 		{ "rifle", "Aaaahhh, I remember now. The best gift I've ever received, a custom made replica of a german rifle, specially fashioned for hunting, which quickly became my favourite hobby." },
-		{ "secret-ending", "I am far more dangerous than these guys are or ever will be." },
+		{ "burglars", "I am far more dangerous than these guys are or ever will be." },
 		{ "photo-zebra", "Africa? I've been to Africa? I can't recall, but I've definitely taken this picture." },
 		{ "photo2-pro", "This is not the work of an amateur, however I don't think it's me. Who is this?" },
 		{ "camera", "This is not a cheap camera, I remember paying quite a fortune for it. Am I a photographer of some sort? I must have some undeveloped film lying around..." },

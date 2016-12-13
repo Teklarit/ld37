@@ -106,8 +106,6 @@ public class MainCameraControl : MonoBehaviour
         {
             aim_controller.is_ineractable = true;
             Collider hit_collider = hit.collider;
-            print("Get collider, game_object: " + hit_collider.gameObject);
-            print("Found an object - distance: " + hit.distance);
         }
         else
         {
