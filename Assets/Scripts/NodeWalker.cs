@@ -100,6 +100,8 @@ public class NodeWalker : MonoBehaviour {
 
 		// Do node operations (text, sound, etc)
 		UIMessage.show_message(Texts.texts[node.gameObject.name]);
+        audio3.Stop();
+        audio2.Stop();
         AudioClip obj_sound = node.objectClip;
         AudioClip voice_sound = node.voiceClip;
         if (obj_sound != null && voice_sound != null)
