@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 4292802079255060}
   - component: {fileID: 114000931455445260}
   m_Layer: 0
-  m_Name: '@pictures-face'
+  m_Name: '@pictures-faces'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1616,6 +1616,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 1
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114003939335613216
 MonoBehaviour:
@@ -1634,6 +1635,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114072678690081962
 MonoBehaviour:
@@ -1652,6 +1654,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114306961432872768}
   - {fileID: 114117114468062182}
@@ -1672,6 +1675,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114098206128110462
 MonoBehaviour:
@@ -1690,6 +1694,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114348892908413342}
   - {fileID: 114787777225711102}
@@ -1705,12 +1710,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63cfaca31ae1f4e4e8a9d928f3232703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: c2ab3a2d1f897644dae1615e69695ce9, type: 3}
   objectClip: {fileID: 0}
   originalObj: {fileID: 0}
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114202566990169600}
   - {fileID: 114970677009007306}
@@ -1735,6 +1741,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114918577778295342}
   - {fileID: 114597453916501374}
@@ -1755,6 +1762,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114877380378423624}
   - {fileID: 114953432155211176}
@@ -1775,6 +1783,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114143863676701270}
   - {fileID: 114269272567903930}
@@ -1796,6 +1805,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114138478646844290}
 --- !u!114 &114143863676701270
@@ -1815,6 +1825,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114000931455445260}
   - {fileID: 114531971551900082}
@@ -1836,6 +1847,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114116927060757166}
   - {fileID: 114284302342867946}
@@ -1856,6 +1868,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 1
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114166438628625382
 MonoBehaviour:
@@ -1874,6 +1887,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114166865107151906
 MonoBehaviour:
@@ -1892,6 +1906,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114322082195394502}
   - {fileID: 114687757355257582}
@@ -1912,6 +1927,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114253264176827388
 MonoBehaviour:
@@ -1930,6 +1946,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114962143743410274}
 --- !u!114 &114269272567903930
@@ -1949,6 +1966,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114663393028959002}
   - {fileID: 114329928711926924}
@@ -1969,6 +1987,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114003939335613216}
   - {fileID: 114972947658883414}
@@ -1989,6 +2008,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 1
   visited: 0
+  state: 0
   associations:
   - {fileID: 114504965701043552}
   - {fileID: 114331899615553274}
@@ -2009,6 +2029,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114892518510238554}
 --- !u!114 &114306961432872768
@@ -2028,6 +2049,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 1
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114309592826641366
 MonoBehaviour:
@@ -2046,6 +2068,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 1
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114322082195394502
 MonoBehaviour:
@@ -2064,6 +2087,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114687757355257582}
   - {fileID: 114884993341524792}
@@ -2084,6 +2108,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114412509538968776}
 --- !u!114 &114331899615553274
@@ -2103,6 +2128,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114339640546639490
 MonoBehaviour:
@@ -2121,6 +2147,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114348892908413342
 MonoBehaviour:
@@ -2139,6 +2166,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 1
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114412509538968776
 MonoBehaviour:
@@ -2157,6 +2185,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114504965701043552
 MonoBehaviour:
@@ -2175,6 +2204,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114309592826641366}
   - {fileID: 114597453916501374}
@@ -2195,6 +2225,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114272882303763732}
 --- !u!114 &114531971551900082
@@ -2214,6 +2245,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114116927060757166}
 --- !u!114 &114561022636495822
@@ -2233,6 +2265,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114562001288597486
 MonoBehaviour:
@@ -2251,6 +2284,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114663559231051230}
 --- !u!114 &114597453916501374
@@ -2270,6 +2304,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114166438628625382}
 --- !u!114 &114663393028959002
@@ -2289,6 +2324,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114329928711926924}
   - {fileID: 114269272567903930}
@@ -2309,6 +2345,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 1
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114687757355257582
 MonoBehaviour:
@@ -2327,6 +2364,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114884993341524792}
   - {fileID: 114322082195394502}
@@ -2348,6 +2386,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114166865107151906}
   - {fileID: 114161936672436018}
@@ -2368,6 +2407,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114164797477995312}
   - {fileID: 114166865107151906}
@@ -2389,6 +2429,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114284302342867946}
 --- !u!114 &114863756717170418
@@ -2408,6 +2449,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114339640546639490}
   - {fileID: 114909193773674576}
@@ -2428,6 +2470,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114884993341524792
 MonoBehaviour:
@@ -2446,6 +2489,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114720125537009098}
   - {fileID: 114093151140882982}
@@ -2466,6 +2510,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114253264176827388}
 --- !u!114 &114909193773674576
@@ -2485,6 +2530,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114962615484829604}
 --- !u!114 &114918577778295342
@@ -2504,6 +2550,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114687757355257582}
   - {fileID: 114562001288597486}
@@ -2524,6 +2571,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114962143743410274
 MonoBehaviour:
@@ -2542,6 +2590,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114529899858446020}
 --- !u!114 &114962615484829604
@@ -2561,6 +2610,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114285383556828126}
 --- !u!114 &114970677009007306
@@ -2580,6 +2630,7 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 1
   visited: 0
+  state: 0
   associations: []
 --- !u!114 &114972947658883414
 MonoBehaviour:
@@ -2598,5 +2649,6 @@ MonoBehaviour:
   clearObj: {fileID: 0}
   isSecretAgent: 0
   visited: 0
+  state: 0
   associations:
   - {fileID: 114561022636495822}
