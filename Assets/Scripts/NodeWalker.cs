@@ -100,10 +100,17 @@ public class NodeWalker : MonoBehaviour {
 
 		// Do node operations (text, sound, etc)
 		UIMessage.show_message(Texts.texts[node.gameObject.name]);
-        AudioClip sound = node.voiceClip;
-        if (sound)
+        AudioClip obj_sound = node.objectClip;
+        AudioClip voice_sound = node.voiceClip;
+        if (obj_sound != null && voice_sound != null)
         {
-            audio2.PlayOneShot(sound, 1.0f);
+            audio3.PlayOneShot(obj_sound, 1.0f);
+            audio2.clip = voice_sound;
+            audio2.PlayDelayed(obj_sound.length);
+        }
+        else if (voice_sound != null)
+        {
+            audio2.PlayOneShot(voice_sound, 1.0f);
         }
 	}
 
@@ -137,6 +144,16 @@ public class NodeWalker : MonoBehaviour {
     }
 	
 	void Update () {
+        if (audio3.isPlaying)
+            audio2.volume = audio3.volume / 2.0f;
+        else
+            audio2.volume = 1.0f;
+
+        if (audio2.isPlaying)
+            audio1.volume = audio2.volume / 2.0f;
+        else
+            audio1.volume = 1.0f;
+
 		if (Input.GetButtonDown("Fire1")) {
 			RaycastHit hit;
 			if (Physics.Raycast(transform.position, transform.forward, out hit, 8.0f, interactibleLayer)) {
