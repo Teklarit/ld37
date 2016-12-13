@@ -88,9 +88,28 @@ public class NodeWalker : MonoBehaviour {
 			Unreveal(writer);
 			Associate(painterly);
 		}
+		{
+			var currentRenderer = node.clearObj.GetComponent<Renderer>();
+			if (currentRenderer)
+			{
+				for (var i = 0; i < currentRenderer.materials.Length; i++)
+				{
+					var material = currentRenderer.materials[i];
+					material.SetColor("_EmissionColor", Color.black);
+				}
+			}
+		}
 		// Hide node previous to the one we currently have, not the one we're going to
 		if (prevNode) {
-
+			var currentRenderer = prevNode.clearObj.GetComponent<Renderer>();
+			if (currentRenderer)
+			{
+				for (var i = 0; i < currentRenderer.materials.Length; i++)
+				{
+					var material = currentRenderer.materials[i];
+					material.SetColor("_EmissionColor", Color.black);
+				}
+			}
 			// Can't hide table my stuff is on
 			if (prevNode.name != "table-painterly" && prevNode.name != "table") {
 				Unreveal(prevNode);
@@ -107,7 +126,17 @@ public class NodeWalker : MonoBehaviour {
 		}
 		// Hide all the associations for the current node that we've not used
 		if (currentNode) {
-			for (var i = 0; i < currentNode.associations.Length; i++) {
+			var currentRenderer = currentNode.clearObj.GetComponent<Renderer>();
+			if (currentRenderer)
+			{
+				for (var i = 0; i < currentRenderer.materials.Length; i++)
+				{
+					var material = currentRenderer.materials[i];
+					material.SetColor("_EmissionColor", new Color(0f, 0.15f, 0f));
+				}
+			}
+			for (var i = 0; i < currentNode.associations.Length; i++)
+			{
 				Unreveal(currentNode.associations[i]);
 			}
 		}
@@ -165,6 +194,9 @@ public class NodeWalker : MonoBehaviour {
 	void Start () {
 		history = new Stack<Node>();
 		//GameObject.Find("burglars:origin").SetActive(true);
+		var trophy = GameObject.Find("prize-trophy:origin");
+		trophy.transform.FindChild("blob").gameObject.SetActive(true);
+		trophy.transform.FindChild("sport_trophy_01").gameObject.SetActive(false);
 		GoNode(startNode);
 
         audio1.PlayOneShot(music, music_volume);
