@@ -14,6 +14,7 @@ public class NodeWalker : MonoBehaviour {
     public AudioSource audio1;
     public AudioSource audio2;
     public AudioSource audio3;
+	public GameCutscene cutscene;
 
     public Node startNode;
 	public UiMessage UIMessage;
@@ -50,6 +51,13 @@ public class NodeWalker : MonoBehaviour {
 	}
 
 	private void GoNode(Node node) {
+		if (node.name == "burglars")
+		{
+			node.originalObj.gameObject.SetActive(false);
+			cutscene.TriggerLoseSequence();
+			UIMessage.gameObject.SetActive(false);
+			return;
+		}
 		Debug.Log("---------------------------------------------");
 		Debug.Log("NEW NODE: " + node);
 		Debug.Log("CURRENT NODE: " + currentNode);
