@@ -8376,7 +8376,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114042396157696736
@@ -8482,7 +8482,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114116652532080974
@@ -8504,7 +8504,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114123692933429368
@@ -8566,7 +8566,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114166794869946750
@@ -8588,7 +8588,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114175953476546134
@@ -8610,7 +8610,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114188724584712308
@@ -8632,7 +8632,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114225799951143740
@@ -8673,7 +8673,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114233171410123466
@@ -8755,7 +8755,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114283802369329256
@@ -8798,7 +8798,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114323882009914378
@@ -8820,7 +8820,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114345832669743518
@@ -8902,7 +8902,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114364080580747236
@@ -8924,7 +8924,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114385196198578868
@@ -8946,7 +8946,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114391634423260664
@@ -8968,7 +8968,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114411635513709426
@@ -9073,7 +9073,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114512339043640628
@@ -9135,7 +9135,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114525391861002436
@@ -9157,7 +9157,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114534119761179134
@@ -9200,7 +9200,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114547178241236322
@@ -9222,7 +9222,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114564780801231970
@@ -9264,7 +9264,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114583025770002132
@@ -9329,7 +9329,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114627883703437854
@@ -9372,7 +9372,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114631998723599072
@@ -9394,7 +9394,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114660533556477518
@@ -9435,7 +9435,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114684303467079732
@@ -9478,7 +9478,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114701339546235616
@@ -9560,7 +9560,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114721324799097656
@@ -9621,7 +9621,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114771305604177108
@@ -9688,7 +9688,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114812646452284948
@@ -9729,7 +9729,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114819529815925016
@@ -9751,7 +9751,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114823720064156820
@@ -9811,7 +9811,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114870329899642236
@@ -9931,7 +9931,7 @@ MonoBehaviour:
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
   _metallic: 0
   _smoothness: 0
-  _castShadows: 0
+  _castShadows: 1
   _receiveShadows: 0
   _surfaceShader: {fileID: 4800000, guid: 5291196e5132acb4aaff4271ac3f42c0, type: 3}
 --- !u!114 &114924542079209776
