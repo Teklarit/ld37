@@ -398,6 +398,8 @@ MonoBehaviour:
 
     Kyrylo Rovnyi
 
+    Illia Lukianov
+
     Ihor Ranchynskyi
 
     Michael Korshunv
@@ -406,7 +408,10 @@ MonoBehaviour:
 
     Vitalii Vodkevych
 
-    Denys Mentei'
+    Denys Mentei
+
+
+    Supported by BEATSHAPERS'
 --- !u!114 &114730563689659558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -480,7 +485,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d70ab2d947e9f4a43a6e77c10aec7814, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 136f7733eec254842bfaea3e4e99b25b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -791,7 +796,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8, y: 13.7}
+  m_AnchoredPosition: {x: 3, y: 4}
   m_SizeDelta: {x: 300, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224864197290408100
