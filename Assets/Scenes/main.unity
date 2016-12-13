@@ -809,6 +809,66 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 181157178}
   m_Mesh: {fileID: 4300038, guid: 713fcc6878ebf404db70679a18e9b9d5, type: 3}
+--- !u!1 &192222146 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1684885747014890, guid: 7b9fe23a32081b84aa0718c76879f961,
+    type: 2}
+  m_PrefabInternal: {fileID: 923289129}
+--- !u!114 &192222157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 192222146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97e9b95cf609d96409b6c40519432957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filterType: 2
+  preview: 1
+  previewScale: {x: 1, y: 1, z: 1}
+  movementScale: 0
+  rotationScale: 1
+  maxVelocity: 8
+  minVelocity: 0.1
+  velocityScale: 0.78
+  softZDistance: 0.005
+  velocityDownsample: 1
+  excludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  shader: {fileID: 4800000, guid: 85a88efa8c871af4a9d17c64791b6f4f, type: 3}
+  dx11MotionBlurShader: {fileID: 4800000, guid: f1b13d7a80660504a858ea24cfa418c6,
+    type: 3}
+  replacementClear: {fileID: 4800000, guid: 7699c5fbfa27745a1abe111ab7bf9785, type: 3}
+  noiseTexture: {fileID: 2800000, guid: 31f5a8611c4ed1245b18456206e798dc, type: 3}
+  jitter: 0.05
+  showVelocity: 0
+  showVelocityScale: 1
+--- !u!114 &192222158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 192222146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6d4281e5d7cd44d8c6e38bc2c1b8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  intensity: 0.045
+  chromaticAberration: 2.44
+  axialAberration: 0.5
+  blur: 0.118
+  blurSpread: 0.75
+  luminanceDependency: 0.25
+  blurDistance: 2.5
+  vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
+  separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
+  chromAberrationShader: {fileID: 4800000, guid: 2b4f29398d9484ccfa9fd220449f5eee,
+    type: 3}
 --- !u!1 &204960093 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1158817396499280, guid: 7b9fe23a32081b84aa0718c76879f961,
@@ -826,13 +886,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   filterType: 2
-  preview: 0
+  preview: 1
   previewScale: {x: 1, y: 1, z: 1}
   movementScale: 0
   rotationScale: 1
   maxVelocity: 8
   minVelocity: 0.1
-  velocityScale: 1
+  velocityScale: 0.17
   softZDistance: 0.005
   velocityDownsample: 1
   excludeLayers:
@@ -7435,7 +7495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   _radius: 1
-  _noiseAmplitude: 0.04
+  _noiseAmplitude: 0.01
   _noiseFrequency: 1
   _noiseMotion: 1
   _surfaceColor: {r: 0.08333333, g: 0.1, b: 0.09166666, a: 1}
