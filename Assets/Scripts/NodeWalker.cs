@@ -9,7 +9,13 @@ public class NodeWalker : MonoBehaviour {
 	private Node currentNode;
 	private Node prevNode;
 
-	public Node startNode;
+    public AudioClip music;
+    public float music_volume = 0.2f;
+    public AudioSource audio1;
+    public AudioSource audio2;
+    public AudioSource audio3;
+
+    public Node startNode;
 	public UiMessage UIMessage;
 	public LayerMask interactibleLayer;
 	[ColorUsage(false, true, 0, 8, 0.125f, 3)] public Color hidden;
@@ -94,6 +100,11 @@ public class NodeWalker : MonoBehaviour {
 
 		// Do node operations (text, sound, etc)
 		UIMessage.show_message(Texts.texts[node.gameObject.name]);
+        AudioClip sound = node.voiceClip;
+        if (sound)
+        {
+            audio2.PlayOneShot(sound, 1.0f);
+        }
 	}
 
 	private void Return() {
@@ -121,7 +132,9 @@ public class NodeWalker : MonoBehaviour {
 	void Start () {
 		history = new Stack<Node>();
 		GoNode(startNode);
-	}
+
+        audio1.PlayOneShot(music, music_volume);
+    }
 	
 	void Update () {
 		if (Input.GetButtonDown("Fire1")) {
