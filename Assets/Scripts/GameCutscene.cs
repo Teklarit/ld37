@@ -83,6 +83,7 @@ public class GameCutscene : MonoBehaviour
 		yield return new WaitForSeconds(5.0f);
 		print("Game Over");
 		UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+		Cursor.lockState = CursorLockMode.Confined;
 		yield return null;
 	}
 
@@ -122,6 +123,7 @@ public class GameCutscene : MonoBehaviour
 		yield return new WaitForSeconds(5.0f);
 		print("Game Over");
 		UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+		Cursor.lockState = CursorLockMode.Confined;
 		yield return null;
 	}
 
