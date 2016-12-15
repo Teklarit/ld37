@@ -54,11 +54,7 @@ public class UiMessage : MonoBehaviour {
             }
         }
 
-        if (in_str.Length == 0 && Input.GetKeyDown("space"))
-        {
-            is_showed = false;
-        }
-
+        if (in_str.Length == 0 && Input.GetKeyDown("space")) { is_showed = false; }
         if (Input.GetKeyDown("space") && in_str.Length > 0) // in_str.Length - защита от постоянного скидывания time_counter с задержкой
         {
             message.text += in_str;
@@ -103,4 +99,6 @@ public class UiMessage : MonoBehaviour {
         time_counter = -fade_starting_delay; // 0;
         in_str = s;
     }
+
+    public void reset_message() { reset_fade(); }
 }
